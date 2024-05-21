@@ -1,0 +1,223 @@
+8:45 AM TO 5:45 PM
+
+SESSION1: 8:45 AM - 10:40 AM
+SB1 : 10:40 AM TO 11:00 AM
+SESSION2 : 11:00 AM TO 12:45 PM [executions-assignments]
+
+LUNCH BREAK : 12:45 PM TO 1:45 PM
+
+LAB1 : 1:45 PM TP 3:30 PM 
+SB2 : 3:30 PM TO 3:50 PM 
+LAB2 : 3:50 PM TO 5:45 PM [executions-assignments]
+
+
+
+ Concurrency and Multithreading in Java
+
+	Multithreading Basics: Creating and Managing Threads
+		
+	Thread:
+		Thread as a sub process which is light weight sub process and smallest unit of processing.
+
+	Multithreading is a process of executing multiple threads simultaneously.
+
+	Multitasking:
+		user performing mutiple actions simultaneously.
+		1. Process Based Multitasking: (Multi processing)
+				Processes are heavyweight and each process was alloted by a seperate memory area.
+
+		2. Thread Based Multitasking: (Multi tasking)
+			Life cycle of Thread
+				Thread Lifecycle: States and Transitions
+
+					New State
+					Active State
+					Waiting/Blocked State
+					Timed waiting state
+					Terminated State
+
+			Threads are created in two ways:
+				1. Extending Thread class
+				2. Implenting a Runnable Interface.
+
+
+	Synchronization and Inter-thread Communication
+		Thread Synchronization: Synchronized Blocks and Methods
+				1. Mutual exclusive :
+						1. Synchronized method
+						2. Synchronized block
+						3. Static Synchronization
+
+				2. Inter Thread communication
+
+	Thread Pools and Concurrency Utilities
+		Concurrency Utilities: 
+				Executors, 
+		Concurrent Collections:ensures safe and concurrent access to data by multiple threads
+		 CompletableFuture:
+					runs a task on seperate thread other than main thread and notifies the main thread about its progress ,
+					completion or failure.
+
+	Thread Safety: Writing Thread-Safe Code, Immutable Objects:
+			1. Using Synchronization
+			2. Using Volatile keyword
+			3. Using Atomic Variable
+			4. Using Final keyword
+
+
+	Generics and Type Safety
+		Generic Classes and Methods
+		Bounded Type Parameters and Wildcards
+		Generic Collections and Type Inference
+
+			T - Type
+			E - Element
+			K - Key
+			N - Number
+			V - Value
+
+	Java Reflection and Annotations
+		Reflection API: Accessing and Modifying Runtime Classes
+		Annotations: Built-in and Custom Annotations
+	
+	Lambda Expressions and Functional Programming
+		Functional Programming Concepts:
+				Its a declarative style of programming .
+				The basic idea is to make code more concise, less complex,more predictable and easier to test compared to
+				 legacy coding style 
+				
+				Functional Programming deals with concpts like pure function,Immutable state ,assignment less programming etc...
+				Higher Order functions:
+						In functional Programming, functions are to be considered as first class citizens.
+				Pure functions:
+						it always returns the same result for same argument values and it has no side effects 
+						like modifying an argument (or global variable) or outputting values.
+				Lambda Expressions:
+					Its an anonymous method that has mutability at very minimum and it has only a parameter list and body.
+
+					syntax:   (parameter) -> body
+				
+
+		Lambda Expressions: Syntax and Usage:
+
+		Functional Interfaces: 
+					A Functional Interface contains only one abstract method.
+					Java8 Onwards,Lambda Expressions can be used to represent the instance of a functional Interface.
+
+					Functional Interface can have any number of default methods.
+					Runnable,ActionListenet and Comparable etc are example of Functional Interfaces.
+						
+					Built In Java Functional Interfaces:
+					-> Runnable
+					-> Comparable
+					-> ActionListener
+					-> Callable
+
+					1. Consumer : Its a functional interface that accepts only one argument.
+
+							Syntax:
+
+							Consumer<Integer> consumer = (value) -> System.out.println(value);
+
+					2. Predicate:
+							Its a function that accepts an argument and in return,it generates a boolen value as an
+							answer is known as prdeicate.
+
+							Syntax:
+
+							public interface Predicate<T>{
+								boolean test(T t);
+							}
+ 
+					3. Function:
+							Its a type of functional interface in Java that recieves only a single argument and 
+							returns a value after the required processing.
+
+
+					4. Supplier:
+							
+							Supplier functional interface is also a type of functional interface that does not take any
+							input or argument and yet returns a single output.
+
+							Method References
+
+				Java IO, NIO, and Networking
+					Java IO Basics
+						File Handling (FileReader, FileWriter)
+						BufferedReader, BufferedWriter
+					Advanced Java IO
+						Streams and File I/O
+						Serialization and Deserialization
+
+					New IO (NIO): 
+						Java IO(Input/Output) used to perform read and write operations.
+
+						java.nio.package contains all classes required for input and output operations.
+
+						Buffers:
+							Java NIO is a buffer oriented package,meaning the data can be read/written from a buffer
+						which further processed by a channel. 
+
+						Channels:
+							A channel is like a stream used for communicating with external entity.
+
+						From a channel we can read data into a buffer / write from a buffer.
+						NIO performs non blocking IO operations.
+						
+
+						Selectors:
+
+
+					File and Directory Operations
+					Java Networking
+						Sockets, URL, InetAddress
+						Building Client-Server Applications
+
+
+				Java 8 Date and Time API
+					Working with LocalDate, LocalTime, LocalDateTime
+					Temporal Adjusters, Periods, and Time Zones
+
+				JDBC Programming
+					Basics of JDBC
+					JDBC overview and architecture
+
+					Establishing database connections
+					Executing SQL queries using JDBC
+					Processing query results with ResultSet
+
+					Advanced JDBC
+						Using PreparedStatement for efficient queries
+						Handling database metadata
+						Executing stored procedures with CallableStatement
+						Transaction management in JDBC
+
+				Java Testing and Debugging
+
+					JUnit Framework -JUnit5
+						Basics of JUnit for unit testing
+
+						JUnit is a Testing framework.
+						Annotations
+
+						Annotations: @Test, @Before, @After, @BeforeClass, @AfterClass
+
+						Writing test cases and assertions: assertEquals, assertTrue, assertFalse
+						Organizing tests into suites
+
+						Debugging Techniques
+						Using IDE debugging features (Eclipse, IntelliJ)
+						Setting and using breakpoints
+						Inspecting variables and expressions
+						Analyzing call stacks
+						Utilizing logging frameworks (Log4j, SLF4J)
+						Code Profiling and Performance Analysis
+						Tools for profiling: VisualVM, JProfiler
+						Memory usage and leak detection
+						CPU usage and performance bottlenecks
+						Analyzing garbage collection and JVM behavior
+
+
+
+
+
